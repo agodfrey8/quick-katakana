@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
 .navbar-fixed-left, .nav-back {
   width: 240px;
   position: fixed;
@@ -16,9 +17,6 @@
 .nav-back {
   height: 100%; }
 
-.navbar-fixed-left + .container, .nav-back + .container {
-  padding-left: 240px; }
-
 .navbar-top {
   background-color: #c70025;
   color: white; }
@@ -26,7 +24,8 @@
     color: white; }
 
 .navbar-brand {
-  font-size: 72px; }
+  font-size: 72px;
+  font-family: 'Nothing You Could Do', 'Helvetica', sans-serif; }
 
 .navbar-toggle {
   float: right; }
@@ -34,17 +33,27 @@
 .navbar-toggle {
   display: none; }
 
+.curve-back, .curve-front {
+  background-color: #c70025;
+  height: 120px;
+  padding-left: 240px; }
+
+.curve-front {
+  background-color: white;
+  border-radius: 120px 0 0 0; }
+
 .container {
-  margin-top: 32px; }
+  padding-left: 240px; }
 
 @media only screen and (max-width: 636px) {
-  .navbar-fixed-left, .nav-back {
+  .navbar-fixed-left, .nav-back, .curve-front, .curve-back, .curve-front {
     display: none; }
 
   .navbar-toggle {
     display: initial; }
 
-  .navbar-fixed-left + .container, .nav-back + .container {
+  .container {
+    padding-top: 32px;
     padding-left: 32px; }
 
   .navbar-brand {

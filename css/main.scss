@@ -1,6 +1,8 @@
 $nav-color: #c70025;
 $nav-width: 240px;
+$reduce-width: 180px;
 $curve-height: 120px;
+$reduce-curve: 90px;
 
 @import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
 
@@ -19,6 +21,14 @@ $curve-height: 120px;
     width: $nav-width - 1;
     padding: 0.75em 0;
   }
+}
+
+.navbar-toggler-icon{
+  color: black;
+}
+
+.navbar-collapse > .navbar-nav > li {
+  padding: 0.75em 0;
 }
 
 .nav-back{
@@ -41,9 +51,6 @@ $curve-height: 120px;
 
 .navbar-toggle{
   float: right;
-}
-
-.navbar-toggle{
   display: none;
 }
 
@@ -60,7 +67,37 @@ $curve-height: 120px;
 }
 
 .container{
-  padding-left: $nav-width;
+  padding-left: $nav-width + 16px;
+  p{
+    max-width: 750px;
+  }
+}
+
+@media only screen and (max-width: 936px) {
+  .navbar-fixed-left {
+    width: $reduce-width;
+    .navbar-nav > li {
+      width: $reduce-width - 12;
+    }
+  }
+
+  .curve-back{
+    height: $reduce-curve;
+    padding-left: $reduce-width;
+  }
+
+  .curve-front{
+    background-color: white;
+    border-radius: $reduce-curve 0 0 0;
+  }
+
+  .container{
+    padding-left: $reduce-width;
+  }
+
+  .navbar-brand{
+    font-size: 36px;
+  }
 }
 
 @media only screen and (max-width: 636px) {
@@ -76,6 +113,7 @@ $curve-height: 120px;
     padding-top: 32px;
     padding-left: 32px;
   }
+
   .navbar-brand{
     font-size: 24px;
   }

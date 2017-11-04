@@ -14,6 +14,12 @@
     width: 239px;
     padding: 0.75em 0; }
 
+.navbar-toggler-icon {
+  color: black; }
+
+.navbar-collapse > .navbar-nav > li {
+  padding: 0.75em 0; }
+
 .nav-back {
   height: 100%; }
 
@@ -28,9 +34,7 @@
   font-family: 'Nothing You Could Do', 'Helvetica', sans-serif; }
 
 .navbar-toggle {
-  float: right; }
-
-.navbar-toggle {
+  float: right;
   display: none; }
 
 .curve-back, .curve-front {
@@ -43,8 +47,29 @@
   border-radius: 120px 0 0 0; }
 
 .container {
-  padding-left: 240px; }
+  padding-left: 256px; }
+  .container p {
+    max-width: 750px; }
 
+@media only screen and (max-width: 936px) {
+  .navbar-fixed-left, .nav-back {
+    width: 180px; }
+    .navbar-fixed-left .navbar-nav > li, .nav-back .navbar-nav > li {
+      width: 168px; }
+
+  .curve-back, .curve-front {
+    height: 90px;
+    padding-left: 180px; }
+
+  .curve-front {
+    background-color: white;
+    border-radius: 90px 0 0 0; }
+
+  .container {
+    padding-left: 180px; }
+
+  .navbar-brand {
+    font-size: 36px; } }
 @media only screen and (max-width: 636px) {
   .navbar-fixed-left, .nav-back, .curve-front, .curve-back, .curve-front {
     display: none; }

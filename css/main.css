@@ -105,6 +105,9 @@ th {
   .navbar-fixed-left, .nav-back, .curve-front, .curve-back, .curve-front {
     display: none; }
 
+  #active {
+    width: 100%; }
+
   .navbar-toggle {
     display: initial; }
 

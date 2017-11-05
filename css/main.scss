@@ -1,4 +1,5 @@
 $nav-color: #c70025;
+$example-color: rgba( $nav-color, .2 );
 $nav-width: 240px;
 $reduce-width: 180px;
 $curve-height: 120px;
@@ -43,6 +44,16 @@ $reduce-curve: 90px;
   }
 }
 
+#active{
+  background-color: white;
+  padding-left: 8px;
+  width: $nav-width - 32px;
+  border-radius: 6px;
+  a{
+    color: $nav-color;
+  }
+}
+
 .navbar-brand{
   font-size: 72px;
   font-family: 'Nothing You Could Do', 'Helvetica', sans-serif;
@@ -72,12 +83,43 @@ $reduce-curve: 90px;
   }
 }
 
+table{
+  width: 85%;
+  margin: 1.25em auto;
+}
+
+td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+th {
+  @extend td;
+  background-color: $nav-color;
+  color: white;
+}
+
+.container > ul {
+  @extend table;
+  list-style-type: none;
+  background-color: $example-color;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: lighter;
+  border-radius: 24px;
+  border: 1px solid black;
+}
+
 @media only screen and (max-width: 936px) {
   .navbar-fixed-left {
     width: $reduce-width;
     .navbar-nav > li {
       width: $reduce-width - 12;
     }
+  }
+
+  #active{
+    width: $reduce-width - 32px;
   }
 
   .curve-back{

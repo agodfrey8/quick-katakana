@@ -37,7 +37,7 @@
     color: #c70025; }
 
 .navbar-brand {
-  font-size: 72px;
+  font-size: 3.998em;
   font-family: 'Nothing You Could Do', 'Helvetica', sans-serif; }
 
 .navbar-toggle {
@@ -55,12 +55,29 @@
 
 .container {
   padding-left: 256px; }
+  .container h2 {
+    font-size: 1.999em;
+    margin-bottom: 1.414em; }
+  .container h3 {
+    font-size: 1.414em;
+    margin-top: 1.999em;
+    margin-bottom: 1.414em; }
   .container p {
     max-width: 750px; }
+  .container ul {
+    background-color: rgba(199, 0, 37, 0.2);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+    font-style: italic;
+    border-radius: 24px;
+    border: 1px solid black; }
+    .container ul li {
+      margin: 6px auto; }
 
-table, .container > ul {
+table, .container ul {
   width: 85%;
-  margin: 1.25em auto; }
+  margin: 1.25em 0; }
 
 td, th {
   border: 1px solid black;
@@ -69,15 +86,6 @@ td, th {
 th {
   background-color: #c70025;
   color: white; }
-
-.container > ul {
-  list-style-type: none;
-  background-color: rgba(199, 0, 37, 0.2);
-  padding-top: 6px;
-  padding-bottom: 6px;
-  font-weight: lighter;
-  border-radius: 24px;
-  border: 1px solid black; }
 
 @media only screen and (max-width: 936px) {
   .navbar-fixed-left, .nav-back {
@@ -100,7 +108,7 @@ th {
     padding-left: 180px; }
 
   .navbar-brand {
-    font-size: 36px; } }
+    font-size: 2.827em; } }
 @media only screen and (max-width: 636px), screen and (max-height: 472px) {
   .navbar-fixed-left, .nav-back, .curve-front, .curve-back, .curve-front {
     display: none; }
@@ -114,8 +122,14 @@ th {
   .container {
     padding-top: 32px;
     padding-left: 32px; }
+    .container ul {
+      list-style-type: none;
+      padding-left: 6px; }
+
+  table, .container ul {
+    width: 100%; }
 
   .navbar-brand {
-    font-size: 24px; } }
+    font-size: 1.414em; } }
 
 /*# sourceMappingURL=main.css.map */

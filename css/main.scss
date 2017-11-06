@@ -55,7 +55,7 @@ $reduce-curve: 90px;
 }
 
 .navbar-brand{
-  font-size: 72px;
+  font-size: 3.998em;
   font-family: 'Nothing You Could Do', 'Helvetica', sans-serif;
 }
 
@@ -78,14 +78,40 @@ $reduce-curve: 90px;
 
 .container{
   padding-left: $nav-width + 16px;
+  h2{
+    font-size: 1.999em;
+    margin-bottom: 1.414em;
+  }
+  h3{
+    font-size: 1.414em;
+    margin : {
+      top: 1.999em;
+      bottom: 1.414em;
+    }
+  }
   p{
     max-width: 750px;
+  }
+  ul {
+    @extend table;
+    background-color: $example-color;
+    padding: {
+      top: 6px;
+      bottom: 6px;
+      right: 6px;
+    }
+    font-style: italic;
+    border-radius: 24px;
+    border: 1px solid black;
+    li{
+      margin: 6px auto;
+    }
   }
 }
 
 table{
   width: 85%;
-  margin: 1.25em auto;
+  margin: 1.25em 0;
 }
 
 td {
@@ -97,17 +123,6 @@ th {
   @extend td;
   background-color: $nav-color;
   color: white;
-}
-
-.container > ul {
-  @extend table;
-  list-style-type: none;
-  background-color: $example-color;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  font-weight: lighter;
-  border-radius: 24px;
-  border: 1px solid black;
 }
 
 @media only screen and (max-width: 936px) {
@@ -137,7 +152,7 @@ th {
   }
 
   .navbar-brand{
-    font-size: 36px;
+    font-size: 2.827em;
   }
 }
 
@@ -157,9 +172,17 @@ th {
   .container{
     padding-top: 32px;
     padding-left: 32px;
+    ul{
+      list-style-type: none;
+      padding-left: 6px;
+    }
+  }
+
+  table{
+    width: 100%
   }
 
   .navbar-brand{
-    font-size: 24px;
+    font-size: 1.414em;
   }
 }

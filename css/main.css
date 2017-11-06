@@ -22,11 +22,15 @@
 .nav-back {
   height: 100%; }
 
-.navbar-top {
+.navbar-top, .next-btn {
   background-color: #c70025;
   color: white; }
-  .navbar-top a {
+  .navbar-top a, .next-btn a {
     color: white; }
+
+.next-btn {
+  margin: 1.414em auto;
+  float: right; }
 
 #active {
   background-color: white;

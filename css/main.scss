@@ -4,6 +4,10 @@ $nav-width: 240px;
 $reduce-width: 180px;
 $curve-height: 120px;
 $reduce-curve: 90px;
+$ratio-up-one: 1.414em;
+$ratio-up-two: 1.999em;
+$ratio-up-three: 2.827em;
+$ratio-up-four: 3.998em;
 
 @import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
 
@@ -44,6 +48,12 @@ $reduce-curve: 90px;
   }
 }
 
+.next-btn{
+  @extend .navbar-top;
+  margin: $ratio-up-one auto;
+  float: right;
+}
+
 #active{
   background-color: white;
   padding-left: 8px;
@@ -55,7 +65,7 @@ $reduce-curve: 90px;
 }
 
 .navbar-brand{
-  font-size: 3.998em;
+  font-size: $ratio-up-four;
   font-family: 'Nothing You Could Do', 'Helvetica', sans-serif;
 }
 
@@ -79,14 +89,14 @@ $reduce-curve: 90px;
 .container{
   padding-left: $nav-width + 16px;
   h2{
-    font-size: 1.999em;
-    margin-bottom: 1.414em;
+    font-size: $ratio-up-two;
+    margin-bottom: $ratio-up-one;
   }
   h3{
-    font-size: 1.414em;
+    font-size: $ratio-up-one;
     margin : {
-      top: 1.999em;
-      bottom: 1.414em;
+      top: $ratio-up-two;
+      bottom: $ratio-up-one;
     }
   }
   p{
@@ -152,7 +162,7 @@ th {
   }
 
   .navbar-brand{
-    font-size: 2.827em;
+    font-size: $ratio-up-three;
   }
 }
 
@@ -183,6 +193,6 @@ th {
   }
 
   .navbar-brand{
-    font-size: 1.414em;
+    font-size: $ratio-up-one;
   }
 }

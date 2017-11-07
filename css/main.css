@@ -9,7 +9,6 @@
     color: white; }
   .navbar-fixed-left .navbar-nav > li, .nav-back .navbar-nav > li {
     float: none;
-    /* Cancel default li float: left */
     width: 239px;
     padding: 0.75em 0; }
 
@@ -29,7 +28,7 @@
     color: white; }
 
 .next-page-btn {
-  margin: 1.414em auto;
+  margin: 2.827em auto;
   float: right; }
 
 #active {

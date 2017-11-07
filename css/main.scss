@@ -21,7 +21,7 @@ $ratio-up-four: 3.998em;
     color: white;
   }
   .navbar-nav > li {
-    float: none;  /* Cancel default li float: left */
+    float: none;
     width: $nav-width - 1;
     padding: 0.75em 0;
   }
@@ -50,7 +50,7 @@ $ratio-up-four: 3.998em;
 
 .next-page-btn{
   @extend .navbar-top;
-  margin: $ratio-up-one auto;
+  margin: $ratio-up-three auto;
   float: right;
 }
 

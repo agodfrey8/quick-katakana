@@ -144,5 +144,8 @@ th {
 
   .navbar-brand {
     font-size: 1.414em; } }
+@media only screen and (max-width: 350px) {
+  table, .container ul {
+    font-size: 0.707em; } }
 
 /*# sourceMappingURL=main.css.map */

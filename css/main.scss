@@ -61,6 +61,10 @@ $ration-down-one: 0.707em;
   @extend .navbar-top;
   margin: $ratio-up-three auto;
   float: right;
+  &:hover{
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 #active{

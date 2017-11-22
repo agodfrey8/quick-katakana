@@ -37,6 +37,9 @@
 .next-page-btn {
   margin: 2.827em auto;
   float: right; }
+  .next-page-btn:hover {
+    color: white;
+    text-decoration: underline; }
 
 #active {
   background-color: white;
